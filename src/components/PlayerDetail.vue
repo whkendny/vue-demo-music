@@ -17,7 +17,8 @@
         </div>
         <div class="pro">
           <div class="pro-wrap">
-            <mu-slider v-model="playerTime" @change="changeTime" :disabled="!sliderStatus" class="song-slider"/>
+            <!--将playerTime前面的v-bind:value 换成 v-model将会报错 -->
+            <mu-slider v-bind:value="playerTime" @change="changeTime" :disabled="!sliderStatus" class="song-slider"/>
           </div>
           <div class="time">
             <time id="cur">{{currentTime | time}}</time>

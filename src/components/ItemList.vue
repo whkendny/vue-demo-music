@@ -6,6 +6,7 @@
        <mu-list-item  :disableRipple="true" :title="item.name" @click="Player(item)"  :describeText="item.ar[0].name" >
         <span slot="left" v-if="" class="indexStyle">{{index + 1}}</span>
       </mu-list-item>
+    </div>
       <mu-divider inset/>
     </mu-list>
   </div>
