@@ -108,10 +108,13 @@ export default {
   },
   methods: {
     toggleStatus () {
-      if (this.status) {
+      console.log(this.status)
+      if (this.status && this.songList.length) {
+        // 播放
         this.play = 'pause_circle_outline'
         document.getElementById('audioPlay').play()
       } else {
+        // 暂停
         this.play = 'play_circle_outline'
         document.getElementById('audioPlay').pause()
       }
@@ -313,4 +316,3 @@ export default {
   text-align: center;
 }
 </style>
-

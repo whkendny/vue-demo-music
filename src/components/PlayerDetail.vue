@@ -249,8 +249,8 @@ export default {
       animation-play-state: paused;
     }
     .h5p-roll {
-      -webkit-animation: Circle 10s linear infinite 0s forwards;
-      animation: Circle 10s linear infinite 0s forwards;
+      -webkit-animation: CCircle 10s linear infinite 0s forwards;
+      animation: CCircle 10s linear infinite 0s forwards;
     }
 
     .lyric {
@@ -388,7 +388,7 @@ export default {
 
 
   // 封面动画
-@-webkit-keyframes Circle {
+@-webkit-keyframes CCircle {
     from{
         -webkit-transform: rotate(0deg);
     }
@@ -396,7 +396,7 @@ export default {
         -webkit-transform: rotate(360deg);
     }
 }
-@keyframes Circle {
+@keyframes CCircle {
     from{
         transform: rotate(0deg);
     }

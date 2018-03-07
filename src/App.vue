@@ -11,7 +11,7 @@
     <PlayerDetail v-show="detailShow" @back="toggleDetail"></PlayerDetail>
   </transition>
 </div>
-</template>
+</template> 
 <script>
 import SearchBar from './components/SearchBar'
 import Rank from './components/Rank'

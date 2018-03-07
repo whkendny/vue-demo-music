@@ -4,7 +4,8 @@
     <mu-list v-show="!isloading">
       <div v-for="(item, index) in lists">
        <mu-list-item  :disableRipple="true" :title="item.name" @click="Player(item)"  :describeText="item.ar[0].name" >
-        <span slot="left" v-if="" class="indexStyle">{{index + 1}}</span>
+        <mu-avatar v-bind:src="item.al.picUrl" slot="leftAvatar"/>
+        <span slot="right" v-if="" class="indexStyle">{{index + 1}}</span>
       </mu-list-item>
     </div>
       <mu-divider inset/>
